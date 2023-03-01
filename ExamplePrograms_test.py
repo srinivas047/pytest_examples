@@ -15,9 +15,11 @@ def test_aveGrades(inputPower):
     output = ExamplePrograms.aveGrades(inputPower)
     assert output == 14 // 3
 
-def test_reverseString():
-    output = ExamplePrograms.reverseString("abcdef")
-    assert output == "fedcba"
+# Running Multiple test cases using Parametrization
+@pytest.mark.parametrize("test_input, expected_output", [("abcdef", "fedcba"), ("xyz", "zyx"), ("madman", "namdam")])
+def test_reverseString(test_input, expected_output):
+    output = ExamplePrograms.reverseString(test_input)
+    assert output == expected_output
 
 def test_twoSum():
     output = ExamplePrograms.twoSum([2, 7, 11, 15], 9)
