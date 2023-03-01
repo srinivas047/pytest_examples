@@ -34,4 +34,8 @@ def maxProfit(prices):
 
     return profit
 
+# Write a function which takes in list of numbers and return True if the list containes dulicates
+def containsDulicates(nums):
+    return len(nums) != len(set(nums))
+
 

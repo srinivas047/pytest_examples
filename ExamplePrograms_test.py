@@ -19,3 +19,7 @@ def test_twoSum():
 def test_maxProfit():
     output = ExamplePrograms.maxProfit([7,1,5,3,6,4])
     assert output == 5
+
+def test_containsDuplicates():
+    output = ExamplePrograms.containsDulicates([1,2,3,3,5,6])
+    assert output == True
